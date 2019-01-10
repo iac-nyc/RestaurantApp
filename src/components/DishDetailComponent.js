@@ -33,7 +33,7 @@ class DishDetail extends Component {
                         </Media>
                         <Media tag="li">
                             -- {comment.author}, {new Intl.DateTimeFormat('en-US',
-                                { year: 'numeric', month: 'long', day: '2-digit' }).format(new Date(comment.date))}
+                                { year: 'numeric', month: 'short', day: '2-digit' }).format(new Date(comment.date))}
                                               
                         </Media>
                     </Media>
@@ -65,6 +65,7 @@ class DishDetail extends Component {
         }
 
         return (
+            <div className="container">
             <div className="row">
                 <div className="col-12 col-md-5 m-1">
                     {this.renderDish(this.props.dish)}
@@ -73,6 +74,7 @@ class DishDetail extends Component {
                     {comments}
                 </div>
             </div>
+</div>
         );
     }
 }
