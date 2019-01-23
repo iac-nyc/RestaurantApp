@@ -1,6 +1,8 @@
 {
   "name": "restaurant_app",
-  "version": "0.1.0",
+  "author": "Iftekhar Ahmad Chowdhury",
+  "homepage":"http://iac-nyc.github.io/restaurant_app",    
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "bootstrap": ">=4.1.2",
